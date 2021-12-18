@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #a6abad;
+}
+.main-content{
+
+min-height: 1000px;
+width: 90%;
+margin: 20px auto;
+display: grid;
+grid-template-columns: 300px 700px;
+}
+
+.left-section{
+    grid-column: span 1;
+    background-color: antiquewhite;
+}
+.right-section{
+    grid-column: span 1/span 2;
+    background-color: wheat;
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+
+    display: block;
+    margin: auto;
+    border: 5px white solid;
+    border-radius: 30%;
+    width: 60%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.contact-item{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+  
+}
+.social-media{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    row-gap: 20%;
+    
+}
+
+.icon{
+    display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+    
+}
+.skills{
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+
+}
+.right-section{
+padding-top: 2rem;
+padding-left: 3rem;
+padding-bottom: 32px;
+padding-right: 48px;
+
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.para{
+    text-align: left;
+    font-size: 1rem;
+    text-transform: lowercase;
+}
+@media screen and (max-width:673px).main-content{
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+/* Write CSS code below */
